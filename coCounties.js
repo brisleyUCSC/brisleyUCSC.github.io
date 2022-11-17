@@ -58,7 +58,7 @@ function update(num){
     var i = 0;
     d3.queue()
         .defer(d3.json, "us-10m.json")
-        .defer(d3.tsv, "PopulationDenisty.tsv", function(d) { 
+        .defer(d3.tsv, "PopulationDensity.tsv", function(d) { 
 //                                                        console.log("ID: " + d.id);
                                                         rateById.set(d.id, +d.rate);
                                                         
